@@ -9,7 +9,7 @@ function App() {
   const [show, setShow] = useState(false)
   const handleSubmit=(e) =>{
     e.preventDefault()
-    if(nombre.length > 3 && color.length>6){
+    if(nombre.length > 3 && color.length>=6){
       setShow(true)
     }else{
       setShow(false) 
@@ -19,7 +19,6 @@ function App() {
     
   }
 
-
   return (
     <>
       <h1>Elegi tu color favorito</h1>
@@ -28,6 +27,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

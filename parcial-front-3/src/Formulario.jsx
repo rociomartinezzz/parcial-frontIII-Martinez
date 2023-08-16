@@ -7,7 +7,7 @@ const Formulario = ({setNombre, setColor,handleSubmit}) => {
       <input type="text" onChange={(e) => setNombre(e.target.value)}/>
       <label>Ingresa tu color favorito</label>
       <input type="text" onChange={(e) => setColor(e.target.value)}/>
-      <button>Enviar</button>
+      <button style={{color: 'green',backgroundColor: 'white'}}>Enviar</button>
       
     
     </form>
